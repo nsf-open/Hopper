@@ -1,0 +1,491 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+
+.hopperFooter {
+  .container {
+    @include ms-Grid;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    width: 100% !important;
+    font-family: 'Open Sans' !important;
+  }
+
+  span {
+    font-family: 'Open Sans' !important;
+  }
+
+  label {
+    font-family: 'Open Sans' !important;
+  }
+
+  .pb20 {
+    padding-bottom: 20px !important;
+  }
+
+  .pt20 {
+    padding-top: 20px;
+  }
+
+  .pl20 {
+    padding-left: 20px;
+  }
+
+  .pl10 {
+    padding-left: 10px;
+  }
+
+  .pl1 {
+    padding-left: 1px;
+  }
+
+  .p20 {
+    padding: 20px;
+  }
+
+  .p10 {
+    padding: 10px;
+  }
+
+  .pv6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .ph0 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .p0 {
+    padding: 0px !important;
+  }
+
+  .pl0 {
+    padding-left: 0px !important;
+  }
+
+  .pr20 {
+    padding-right: 20px !important;
+  }
+
+  .pv5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .mh_8 {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .mh_p8 {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .bg_wh {
+    background-color: white;
+  }
+
+  .bg_lightGray {
+    background-color: #fafbfc;
+  }
+
+  .bg_grey {
+    background-color: #1181a9;
+  }
+
+  .bg_lghtGrey {
+    background-color: #1181a9;
+  }
+
+  .bg_blue {
+    background-color: #487aaa;
+  }
+
+  .bg_deepBlue {
+    background-color: #3055a6;
+  }
+
+  .bg_yellow {
+    background-color: #deec92;
+  }
+
+  .row {
+    @include ms-Grid-row;
+  }
+
+  .cl {
+    @include ms-Grid-col;
+  }
+
+  .cl1 {
+    @include ms-Grid-col;
+    @include ms-lg1;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .verticalDivider {
+    background-color: white;
+    width: 1px;
+  }
+
+  .br_grey {
+    border-right: 1px solid #8691a5;
+  }
+
+  .bl_grey {
+    border-left: 1px solid #deec92;
+  }
+
+  .bl_grey15 {
+    border-left: 15px solid #8691a5;
+  }
+
+  .br_white {
+    border-right: 1px solid #ffffff;
+  }
+
+  .cl2 {
+    @include ms-Grid-col;
+    @include ms-lg2;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl3 {
+    @include ms-Grid-col;
+    @include ms-lg3;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl4 {
+    @include ms-Grid-col;
+    @include ms-lg3;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl6 {
+    @include ms-Grid-col;
+    @include ms-lg6;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl8 {
+    @include ms-Grid-col;
+    @include ms-lg9;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl9 {
+    @include ms-Grid-col;
+    @include ms-lg9;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .cl9Bg {
+    @include ms-Grid-col;
+    @include ms-lg9;
+    height: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to right, #fdfbd6, #bee9f0);
+  }
+
+  .cl10 {
+    @include ms-Grid-col;
+    @include ms-lg9;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .textLink {
+    color: #487aaa;
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      //background-color: #F6F6F6;
+      font-weight: bolder;
+    }
+  }
+
+  .homeNav {
+    color: #3055a6;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #F6F6F6;
+      color: black;
+      font-weight: bolder;
+    }
+  }
+
+  .home {
+    background-color: #56c7da;
+  }
+
+  .footer {
+    height: 185px;
+
+    .logoCenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+  }
+
+  .tools {
+    background-color: white;
+
+    .subHeader {
+      color: #56c7da;
+      @include ms-fontSize-42;
+      text-align: right;
+      font-weight: 800;
+      margin: 20px 20px;
+    }
+
+    .content {
+      @include ms-Grid-row;
+      padding: 0px 10px;
+      width: 100%;
+
+      .navColumn {
+        @include ms-Grid-col;
+        @include ms-lg3;
+        background-color: white;
+      }
+
+      .contentColumn {
+        @include ms-Grid-col;
+        @include ms-lg9;
+      }
+
+      .contentDetail {
+        background-image: linear-gradient(to right, #e7f5f6, #eef2c2);
+      }
+
+
+      .attributeSection {
+        .attHeader {
+          padding-left: 20px !important;
+          padding-top: 15px !important;
+          padding-bottom: 10px !important;
+          @include ms-fontSize-16;
+          background-image: linear-gradient(to right, #e2ed99, #98adca);
+          font-weight: bold;
+          color: #3d5ba9;
+          margin-left: -8px;
+          margin-right: -8px;
+        }
+
+        .attBody {
+          border-top: 2px solid #d9e3ec;
+          border-bottom: 2px solid #d9e3ec;
+          @include ms-Grid-row;
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+
+          .attributeKey {
+            padding-left: 30px !important;
+            @include ms-Grid-col;
+            @include ms-lg3;
+            @include ms-fontSize-14;
+            font-weight: bold;
+            color: #487aaa;
+          }
+
+          .attributeVal {
+            @include ms-Grid-col;
+            @include ms-lg9;
+          }
+        }
+
+        .imageContainer {
+          border: 2px solid #d9e3ec;
+          padding: 5;
+          border-radius: 5;
+        }
+
+      }
+
+    }
+
+  }
+
+  .error {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(164, 38, 44);
+  }
+
+  .siteName {
+    font-size: 95px;
+    font-weight: 800;
+    color: #5fd0df;
+    line-height: 0.9em;
+  }
+
+  .fListItem {
+    @include ms-fontSize-12;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none
+  }
+
+  .fHeader {
+    @include ms-fontSize-20;
+    font-weight: 800;
+    color: #56c7da;
+  }
+
+  .fCaption {
+    @include ms-fontSize-14;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.6em;
+  }
+
+  .fCaption_blue {
+    @include ms-fontSize-14;
+    font-weight: bold;
+    color: #3055a6;
+    line-height: 1.6em;
+  }
+
+  .fCaption_blue_small {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #3055a6 !important;
+  }
+
+  .fHeader_blue {
+    @include ms-fontSize-20;
+    font-weight: bold;
+    color: #5fd0df;
+  }
+
+  .fHeader_white {
+    @include ms-fontSize-20;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .mainTitle {
+    @include ms-fontSize-68
+  }
+
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .mainHeader {
+    p {
+      @include ms-fontSize-42;
+      font-weight: bold;
+      color: #a6a6a6;
+      margin: 10px 20px;
+    }
+  }
+
+  .subHeader {
+    color: #00abbe;
+    @include ms-fontSize-32;
+    text-align: right;
+    font-weight: 800;
+    margin: 20px 20px;
+  }
+
+  .subHeader_gray {
+    color: #c2ccd9;
+    @include ms-fontSize-32;
+    text-align: right;
+    font-weight: 800;
+    margin: 20px 20px;
+  }
+
+  .divider_gray {
+    background-color: #c2ccd9 !important;
+  }
+
+
+  .subCaption {
+    @include ms-fontSize-18;
+    color: #477aa8;
+    margin: 0px 20px;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .carouselContainerWithScrollbar {
+    padding-left: 60px;
+    background-color: white;
+  }
+
+  .sliderImageItem {
+    border: 1px solid #487aaa;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}

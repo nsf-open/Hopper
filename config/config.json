@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "self-service-portal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/selfServicePortal/SelfServicePortalWebPart.js",
+          "manifest": "./src/webparts/selfServicePortal/SelfServicePortalWebPart.manifest.json"
+        }
+      ]
+    },
+    "hopper-footer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/hopperFooter/HopperFooterWebPart.js",
+          "manifest": "./src/webparts/hopperFooter/HopperFooterWebPart.manifest.json"
+        }
+      ]
+    },
+    "left-navigation-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/leftNavigation/LeftNavigationWebPart.js",
+          "manifest": "./src/webparts/leftNavigation/LeftNavigationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-init": {
+      "path": "https://nsf.sharepoint.com/_layouts/15/init.js",
+      "globalName": "$_global_init"
+    },
+    "microsoft-ajax": {
+      "path": "https://nsf.sharepoint.com/_layouts/15/MicrosoftAjax.js",
+      "globalName": "Sys",
+      "globalDependencies": ["sp-init"]
+    },
+    "sp-runtime": {
+      "path": "https://Cnsfsharepoint.com/_layouts/15/SP.Runtime.js",
+      "globalName": "SP",
+      "globalDependencies": ["microsoft-ajax"]
+    },
+    "sharepoint": {
+      "path": "https://nsf.sharepoint.com/_layouts/15/SP.js",
+      "globalName": "SP",
+      "globalDependencies": ["sp-runtime"]
+    }
+  },
+  "localizedResources": {
+    "SelfServicePortalWebPartStrings": "lib/webparts/selfServicePortal/loc/en-us.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/en-us.js",
+    "HopperFooterWebPartStrings": "lib/webparts/hopperFooter/loc/en-us.js",
+    "LeftNavigationWebPartStrings": "lib/webparts/leftNavigation/loc/en-us.js"
+  }
+}

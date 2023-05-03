@@ -1,0 +1,81 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.softwareItemRow {
+
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #fdfbd6 , #bee9f0);
+
+  .toolName {
+    @include ms-fontSize-28;
+    font-weight: bold;
+    color: #254a99;
+  }
+
+
+  .itemRow {
+    @include ms-Grid-row;
+    padding: 10px 5px;
+  }
+
+  .descriptionColumn {
+    @include ms-Grid-col;
+    @include ms-lg9
+  }
+
+  .buttonColumn {
+    @include ms-Grid-col;
+    @include ms-lg3
+  }
+
+  .attributesValue {
+    border-top: 2px solid #d9e3ec;
+    border-bottom: 2px solid #d9e3ec;
+  }
+
+  .attributes {
+    @include ms-Grid-row;
+   margin: 0 0px !important;
+    .header{
+      @include ms-fontSize-14;
+      font-weight: bold;
+      color: #254a99;
+    }
+
+    .moreInfo {
+      @include ms-Grid-col;
+      @include ms-lg2;
+      @include ms-fontSize-16;
+      font-weight: bold;
+      color: #3b70a1;
+      padding-left: 0px !important;
+    }
+
+    .averageRatings {
+      @include ms-Grid-col;
+      @include ms-lg2
+    }
+
+    .ratingCount {
+      @include ms-Grid-col;
+      @include ms-lg1
+    }
+
+    .creator {
+      @include ms-Grid-col;
+      @include ms-lg3
+    }
+    .maturity{
+      @include ms-Grid-col;
+      @include ms-lg2
+    }
+    .guide {
+      @include ms-Grid-col;
+      @include ms-lg1
+    }
+
+    .testimony {
+      @include ms-Grid-col;
+      @include ms-lg1
+    }
+  }
+}
