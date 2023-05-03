@@ -70,4 +70,4 @@ npm run build prod
 
 ## Contribute
 
-Contributions are always welcome! Email us at img@nsf.gov
+Contributions are always welcome! Email us at img at nsf dot gov
