@@ -88,7 +88,9 @@ interface IListService {
 
 class ListServiceImpl implements IListService {
   getAllUserBadges = async (): Promise<any> => {
-    const badgrWeb = Web("https://nsf.sharepoint.com/sites/badgr/");
+    const context = await sp.site.getContextInfo();
+    const baseUrl = new URL(context.WebFullUrl).origin;
+    const badgrWeb = Web(baseUrl + "/sites/badgr/");
     const allBadgeClasses: any[] = await badgrWeb.lists
       .getByTitle("BadgeClasses")
       .items.getAll()
